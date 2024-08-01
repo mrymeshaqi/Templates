@@ -1,0 +1,270 @@
+
+/* ==============>   Mobail First */
+@media (min-width: 576px) {
+  .client {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .client-desc {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .nav-menu__link {
+    color: white;
+    background-image: -o-linear-gradient(345deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+    background-image: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+    padding: 1rem 2rem;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    height: auto;
+    position: static;
+    overflow: visible;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1rem;
+  }
+  .menu__item {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0 1.5rem;
+  }
+  .menu__item:hover {
+    background-color: transparent;
+  }
+  .nav-menu__btn {
+    background-color: transparent;
+  }
+  .service__logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .caption-width {
+    max-width: 45rem;
+  }
+  .client-info {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .client-info__job {
+    display: block;
+  }
+  .client-person {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .client-person__img {
+    margin-right: 2rem;
+  }
+  .client-person__info {
+    text-align: left;
+  }
+  .footer {
+    text-align: left;
+    padding-top: 28rem;
+  }
+  .footer-heading__title {
+    max-width: 54rem;
+    color: #fff;
+  }
+  .footer-heading__email {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    padding: 1.5rem 0;
+    color: #fff;
+    background-color: transparent;
+  }
+  .footer-heading__btn {
+    color: #fff;
+    background-color: transparent;
+  }
+  .footer-heading__btn:hover {
+    color: rgb(75, 142, 241);
+    background-color: #fff;
+  }
+  input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  input::-moz-placeholder {
+    color: #fff;
+  }
+  input:-ms-input-placeholder {
+    color: #fff;
+  }
+  input::-ms-input-placeholder {
+    color: #fff;
+  }
+  input::placeholder {
+    color: #fff;
+  }
+  .footer-pages {
+    height: 24rem;
+  }
+  .footer-pages--mbottom {
+    margin-bottom: 3rem;
+  }
+  .footer-pages__title {
+    margin-bottom: 3rem;
+  }
+  .footer-pages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-list {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    text-align: left;
+  }
+  .main::before {
+    content: " ";
+    background: url(../image/slider-left-dec.png) no-repeat;
+    background-size: cover;
+    display: block;
+    width: 104rem;
+    height: 98rem;
+    position: absolute;
+    top: -15px;
+    z-index: -3;
+    -webkit-animation: fadeIn 2s;
+            animation: fadeIn 2s;
+  }
+  .main-banner__content {
+    text-align: left;
+  }
+  .main-banner__caption {
+    color: var(--color-text);
+  }
+  .main-banner__links {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .service__logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .caption-width {
+    max-width: 41rem;
+  }
+  .main-banner {
+    height: 97rem;
+  }
+  .about__item--mbottom {
+    margin-bottom: 3rem;
+  }
+  .footer-heading__title {
+    max-width: 48rem;
+  }
+  .footer-list {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .menu {
+    margin-right: 4rem;
+  }
+  .menu__item {
+    padding: 0 2rem;
+  }
+  .caption-width {
+    max-width: 49rem;
+  }
+  .service {
+    margin-bottom: 0;
+    text-align: left
+  }
+  .about {
+    text-align: left;
+  }
+  .about::after {
+    content: " ";
+    background: url(../image/about-bg.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+    width: 77rem;
+    height: 113rem;
+    position: absolute;
+    top: -16rem;
+    right: 0;
+    z-index: -1;
+  }
+  .about__link {
+    margin: 0;
+  }
+  .line-left::before,
+  .line-left::after {
+    margin: 0;
+  }
+  .client {
+    padding-right: 6rem;
+  }
+  .footer-heading__title {
+    max-width: 64rem;
+  }
+  .footer-list {
+    width: 45%;
+  }
+  .footer-pages {
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .caption-width {
+    max-width: 56rem;
+  }
+  .about::after {
+    top: -10.5rem;
+  }
+  .about__caption {
+    max-width: 63rem;
+  }
+  .client {
+    padding-left: 4rem;
+    padding-right: 10rem;
+  }
+  .price-active::after {
+    height: 210px;
+  }
+}

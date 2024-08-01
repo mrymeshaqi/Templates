@@ -1,0 +1,139 @@
+@media (min-width: 1400px) {
+  .wrapper {
+    width: 1360px;
+  }
+  .container {
+    width: 1360px;
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+  .container-header {
+    width: 1360px;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  .nav-mobile__logo {
+    font-size: 4rem;
+  }
+}
+/* ==============>   Desktop First */
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+  .container-header {
+    width: 980px;
+  }
+}
+@media (max-width: 992px) {
+  .container-header {
+    width: 100%;
+  }
+  body::after {
+    content: "small";
+  }
+  .header {
+    position: static;
+  }
+  .nav {
+    align-items: normal;
+    flex-direction: column;
+  }
+  .nav-mobile {
+    padding: 0.8rem 0;
+  }
+  .nav-mobile__logo {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--primary),
+      var(--secondary)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .nav-mobile__btn {
+    display: flex;
+  }
+  .menu {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    color: var(--dark);
+    transition: all 0.5s;
+  }
+  .menu-open {
+    height: 29rem;
+  }
+  .menu__item {
+    padding: 1rem 0;
+  }
+  .menu__item:first-child {
+    border-top: 1px solid #d5d5d5;
+  }
+  .menu__item:last-child {
+    padding-bottom: 2.5rem;
+  }
+  .menu__item:hover {
+    color: var(--primary);
+  }
+  .menu__item--active::after {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .home-content {
+    text-align: center;
+  }
+  .home-content__btns {
+    justify-content: center;
+  }
+  .app {
+    justify-content: center;
+    padding-bottom: 14rem;
+  }
+  .home {
+    padding-top: 10rem;
+  }
+  .about-content,
+  .thirdFeature-image {
+    padding-right: 0;
+  }
+  .about-images,
+  .thirdFeature-content {
+    padding-left: 0;
+  }
+  .firstFeature-app {
+    padding-bottom: 0;
+  }
+  .secondFeature-item {
+    margin-bottom: 7rem;
+  }
+  .thirdFeature-image {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .home-content__btns {
+    flex-wrap: wrap;
+  }
+  .btn {
+    padding: 0.8rem 2.5rem;
+  }
+}
+/* ==============>   Mobail First
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+} */
