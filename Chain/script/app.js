@@ -3,11 +3,10 @@
 // Selecting
 const header = document.querySelector('.header');
 const homeTitle = document.querySelector('.main-banner__title');
-const allSection = document.querySelectorAll('section');
 const navBtn = document.querySelector('.nav-btn');
 const navBar = document.querySelector('.nav-btn i');
 const navMenu = document.querySelector('.nav-menu');
-const allClient = document.querySelectorAll('.client');
+const clientContainer = document.querySelector('.comment-clients');
 const nameClient = document.querySelector('.client-desc__name');
 const ratingClient = document.querySelector('.client-info__rating');
 
@@ -73,17 +72,48 @@ const sectionObserver = new IntersectionObserver(revealSection, {
   threshold: 0.2,
 });
 
-allSection.forEach(function (section) {
+document.querySelectorAll('section').forEach(function (section) {
   section.classList.add('section--hidden');
   sectionObserver.observe(section);
 });
 
 // ===========================================================>>
+// Menu Activation
+const highlightActiveSection = function (entries) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  document.querySelector('a.active')?.classList.remove('active');
+  document
+    .querySelector(`a[href='#${entry.target.id}']`)
+    .classList.add('active');
+};
+
+const menuSectionObserver = new IntersectionObserver(highlightActiveSection, {
+  root: null,
+  threshold: window.innerWidth < 1200 ? 0.2 : 0.5,
+});
+
+document
+  .querySelectorAll('.item')
+  .forEach(item => menuSectionObserver.observe(item));
+
+// ===========================================================>>
 // Client Rating
-allClient.forEach(client =>
-  client.addEventListener('click', function () {
-    client
-      .querySelectorAll('.highlight')
-      .forEach(element => (element.style.color = '#4b8ef1'));
-  })
-);
+clientContainer.addEventListener('click', function (e) {
+  const user = e.target.closest('.client');
+  if (!user) return;
+
+  // remove style
+  document.querySelector('.client.highlight')?.classList.remove('highlight');
+  document
+    .querySelector('.comment-content--show')
+    ?.classList.remove('comment-content--show');
+
+  // Styling
+  user.classList.add('highlight');
+  document
+    .querySelector(`.client__comment--${user.id}`)
+    .classList.add('comment-content--show');
+});

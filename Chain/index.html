@@ -19,8 +19,10 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="styles/app.css" />
     <link rel="stylesheet" type="text/css" href="styles/grid.css" />
+
+    <!-- Scripts -->
+    <script defer src="script/app.js"></script>
   </head>
-  <!-- <body onscroll="headerGoUp()"> -->
   <body>
     <header class="header">
       <div class="container">
@@ -67,7 +69,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="main-banner" id="home">
+      <section class="main-banner item" id="home">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-lg-6">
@@ -104,7 +106,7 @@
           </div>
         </div>
       </section>
-      <section class="services" id="services">
+      <section class="services item" id="services">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -214,7 +216,7 @@
           </div>
         </div>
       </section>
-      <section class="about" id="about">
+      <section class="about item" id="about">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-xl-6">
@@ -292,132 +294,242 @@
               </div>
             </div>
             <div class="col-12 col-xl-7">
-              <div class="client">
-                <div class="client-desc">
-                  <h3 class="client-desc__name title-tree highlight">
-                    David Martino Co
-                  </h3>
-                  <p class="client-desc__date caption">30 November 2021</p>
-                </div>
-                <div class="client-info">
-                  <p class="client-info__job">Financial Apps</p>
-                  <div class="client-info__rating highlight">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    4.8
+              <div class="comment-clients">
+                <div class="client highlight" id="1">
+                  <div class="client-desc">
+                    <h3 class="client-desc__name title-tree">
+                      David Martino Co
+                    </h3>
+                    <p class="client-desc__date caption">30 November 2021</p>
+                  </div>
+                  <div class="client-info">
+                    <p class="client-info__job">Financial Apps</p>
+                    <div class="client-info__rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      4.8
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="client">
-                <div class="client-desc">
-                  <h3 class="client-desc__name title-tree highlight">
-                    Jake Harris Nyo
-                  </h3>
-                  <p class="client-desc__date caption">29 November 2021</p>
-                </div>
-                <div class="client-info">
-                  <p class="client-info__job">Digital Business</p>
-                  <div class="client-info__rating highlight">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    4.8
+                <div class="client" id="2">
+                  <div class="client-desc">
+                    <h3 class="client-desc__name title-tree">
+                      Jake Harris Nyo
+                    </h3>
+                    <p class="client-desc__date caption">29 November 2021</p>
+                  </div>
+                  <div class="client-info">
+                    <p class="client-info__job">Digital Business</p>
+                    <div class="client-info__rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      4.5
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="client">
-                <div class="client-desc">
-                  <h3 class="client-desc__name title-tree highlight">
-                    May Catherina
-                  </h3>
-                  <p class="client-desc__date caption">27 November 2021</p>
-                </div>
-                <div class="client-info">
-                  <p class="client-info__job">Business & Economics</p>
-                  <div class="client-info__rating highlight">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    4.8
+                <div class="client" id="3">
+                  <div class="client-desc">
+                    <h3 class="client-desc__name title-tree">May Catherina</h3>
+                    <p class="client-desc__date caption">27 November 2021</p>
+                  </div>
+                  <div class="client-info">
+                    <p class="client-info__job">Business & Economics</p>
+                    <div class="client-info__rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      4.7
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="client">
-                <div class="client-desc">
-                  <h3 class="client-desc__name title-tree highlight">
-                    Random User
-                  </h3>
-                  <p class="client-desc__date caption">24 November 2021</p>
-                </div>
-                <div class="client-info">
-                  <p class="client-info__job">New App Ecosystem</p>
-                  <div class="client-info__rating highlight">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    4.8
+                <div class="client" id="4">
+                  <div class="client-desc">
+                    <h3 class="client-desc__name title-tree">Random User</h3>
+                    <p class="client-desc__date caption">24 November 2021</p>
+                  </div>
+                  <div class="client-info">
+                    <p class="client-info__job">New App Ecosystem</p>
+                    <div class="client-info__rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      3.9
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="client">
-                <div class="client-desc">
-                  <h3 class="client-desc__name title-tree highlight">
-                    Mark Amber Do
-                  </h3>
-                  <p class="client-desc__date caption">21 November 2021</p>
-                </div>
-                <div class="client-info">
-                  <p class="client-info__job">Web Development</p>
-                  <div class="client-info__rating highlight">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    4.8
+                <div class="client" id="5">
+                  <div class="client-desc">
+                    <h3 class="client-desc__name title-tree">Mark Amber Do</h3>
+                    <p class="client-desc__date caption">21 November 2021</p>
+                  </div>
+                  <div class="client-info">
+                    <p class="client-info__job">Web Development</p>
+                    <div class="client-info__rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      5.0
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-xl-5">
-              <div class="client-content">
-                <img
-                  src="image/quote.png"
-                  alt="qoute"
-                  class="client-content__img"
-                />
-                <p class="client-content__caption">
-                  “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
-                  do eismod tempor idunte ut labore et dolore magna aliqua
-                  darwin kengan lorem ipsum dolor sit amet, consectetur picing
-                  elit massive big blasta.”
-                </p>
+              <div
+                class="comment-content client__comment--1 comment-content--show"
+              >
+                <div class="client-content">
+                  <img
+                    src="image/quote.png"
+                    alt="qoute"
+                    class="client-content__img"
+                  />
+                  <p class="client-content__caption">
+                    “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                    do eismod tempor idunte ut labore et dolore magna aliqua
+                    darwin kengan lorem ipsum dolor sit amet, consectetur picing
+                    elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="client-person">
+                  <img
+                    src="image/users/user-4.jpg"
+                    alt="client image"
+                    class="client-person__img"
+                  />
+                  <div class="client-person__info">
+                    <h3 class="client-person__name title-tree">
+                      David Martino Co
+                    </h3>
+                    <p class="client-person__caption">CEO of David Company</p>
+                  </div>
+                </div>
               </div>
-              <div class="client-person">
-                <img
-                  src="image/client-image.jpg"
-                  alt="client image"
-                  class="client-person__img"
-                />
-                <div class="client-person__info">
-                  <h3 class="client-person__name title-tree">David Martino</h3>
-                  <p class="client-person__caption">CEO of David Company</p>
+              <div class="comment-content client__comment--2">
+                <div class="client-content">
+                  <img
+                    src="image/quote.png"
+                    alt="qoute"
+                    class="client-content__img"
+                  />
+                  <p class="client-content__caption">
+                    “CTO, Lorem ipsum dolor sit amet, consectetur adpiscing
+                    elit, sed do eismod tempor idunte ut labore et dolore magna
+                    aliqua darwin kengan lorem ipsum dolor sit amet, consectetur
+                    picing elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="client-person">
+                  <img
+                    src="image/users/user-1.jpg"
+                    alt="client image"
+                    class="client-person__img"
+                  />
+                  <div class="client-person__info">
+                    <h3 class="client-person__name title-tree">Jake H. Nyo</h3>
+                    <p class="client-person__caption">CTO of Digital Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-content client__comment--3">
+                <div class="client-content">
+                  <img
+                    src="image/quote.png"
+                    alt="qoute"
+                    class="client-content__img"
+                  />
+                  <p class="client-content__caption">
+                    “May, Lorem ipsum dolor sit amet, consectetur adpiscing
+                    elit, sed do eismod tempor idunte ut labore et dolore magna
+                    aliqua darwin kengan lorem ipsum dolor sit amet, consectetur
+                    picing elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="client-person">
+                  <img
+                    src="image/users/user-2.jpg"
+                    alt="client image"
+                    class="client-person__img"
+                  />
+                  <div class="client-person__info">
+                    <h3 class="client-person__name title-tree">May C.</h3>
+                    <p class="client-person__caption">
+                      Founder of Catherina Co.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-content client__comment--4">
+                <div class="client-content">
+                  <img
+                    src="image/quote.png"
+                    alt="qoute"
+                    class="client-content__img"
+                  />
+                  <p class="client-content__caption">
+                    “Mark, Lorem ipsum dolor sit amet, consectetur adpiscing
+                    elit, sed do eismod tempor idunte ut labore et dolore magna
+                    aliqua darwin kengan lorem ipsum dolor sit amet, consectetur
+                    picing elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="client-person">
+                  <img
+                    src="image/users/user-3.jpg"
+                    alt="client image"
+                    class="client-person__img"
+                  />
+                  <div class="client-person__info">
+                    <h3 class="client-person__name title-tree">Mark Am</h3>
+                    <p class="client-person__caption">CTO, Amber Do Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-content client__comment--5">
+                <div class="client-content">
+                  <img
+                    src="image/quote.png"
+                    alt="qoute"
+                    class="client-content__img"
+                  />
+                  <p class="client-content__caption">
+                    “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                    do eismod tempor idunte ut labore et dolore magna aliqua
+                    darwin kengan lorem ipsum dolor sit amet, consectetur picing
+                    elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="client-person">
+                  <img
+                    src="image/users/user-1.jpg"
+                    alt="client image"
+                    class="client-person__img"
+                  />
+                  <div class="client-person__info">
+                    <h3 class="client-person__name title-tree">Random Staff</h3>
+                    <p class="client-person__caption">
+                      Manager, Digital Company
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="pricing" id="pricing">
+      <section class="pricing item" id="pricing">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
@@ -506,7 +618,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer" id="newsletter">
+    <footer class="footer item" id="newsletter">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12">
@@ -634,8 +746,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- <script src="script/app1.js"></script> -->
-    <script src="script/app.js"></script>
   </body>
 </html>

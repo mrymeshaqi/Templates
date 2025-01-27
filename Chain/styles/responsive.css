@@ -1,14 +1,13 @@
-
 /* ==============>   Mobail First */
 @media (min-width: 576px) {
   .client {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .client-desc {
     text-align: left;
@@ -17,8 +16,16 @@
 @media (min-width: 768px) {
   .nav-menu__link {
     color: white;
-    background-image: -o-linear-gradient(345deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
-    background-image: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+    background-image: -o-linear-gradient(
+      345deg,
+      rgba(91, 104, 235, 1) 0%,
+      rgba(40, 225, 253, 1) 100%
+    );
+    background-image: linear-gradient(
+      105deg,
+      rgba(91, 104, 235, 1) 0%,
+      rgba(40, 225, 253, 1) 100%
+    );
     padding: 1rem 2rem;
   }
   .nav {
@@ -26,11 +33,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .nav-btn {
     display: none;
@@ -40,8 +47,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: auto;
     height: auto;
     position: static;
@@ -66,8 +73,8 @@
   }
   .service__logo {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .caption-width {
     max-width: 45rem;
@@ -78,16 +85,16 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .client-info__job {
     display: block;
   }
   .client-person {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   .client-person__img {
     margin-right: 2rem;
@@ -167,7 +174,7 @@
     top: -15px;
     z-index: -3;
     -webkit-animation: fadeIn 2s;
-            animation: fadeIn 2s;
+    animation: fadeIn 2s;
   }
   .main-banner__content {
     text-align: left;
@@ -177,13 +184,13 @@
   }
   .main-banner__links {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   .service__logo {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   .caption-width {
     max-width: 41rem;
@@ -213,7 +220,7 @@
   }
   .service {
     margin-bottom: 0;
-    text-align: left
+    text-align: left;
   }
   .about {
     text-align: left;
